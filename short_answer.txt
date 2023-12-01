@@ -1,0 +1,70 @@
+1) What does the `rm` command in the terminal do?
+
+Your answer: the rm command removes files.
+
+
+------------------
+2) What terminal command would you use to list all the files and folder in the 
+   current directory?
+
+Your answer: ls
+
+------------------
+3) Explain the difference between these two commands in the terminal:
+   
+   $ cd Users
+   $ cd /Users
+
+Your answer: cd Users changes directory into a folder directory, while cd /Users changes directories into a file.
+
+
+------------------
+4) Describe what git is and what it is used for.
+
+Your answer: git is an opensource version control program that tracks changes made to files and allows user's to view and return to previous versions of their work. It is a repository backed up on a user's machine.
+
+
+------------------
+5) Describe what GitHub is and what it is used for.
+
+Your answer: github is a website that allows user's to host their projects on the cloud and allows the projects to be shared and accessed by multiple users.
+
+
+------------------
+6) Which of these commands sets up a new git repository?
+    a) git clone 
+    b) git pull
+    c) git init
+    d) git status
+
+Your answer: git init
+
+------------------
+7) You want to check that you have properly added all the files you want to be
+   tracked in git BEFORE you make a commit. Which command will do this?
+     a) git push
+     b) git commit
+     c) git status
+     d) git remote
+
+Your answer: git status
+
+
+------------------
+8) What is the difference between `git add` and `git commit`?
+
+Your answer: 'git add' is a way of saving code on individual files as you are working. 'git commit' creates a backup of your file and will create a "version" that can be viewed again.
+
+
+------------------
+9) What does the `git push` command do?
+
+Your answer: 'git push' allows user to upload (or 'push') the project to a remote repository like on GitHub.
+
+
+------------------
+10) When would you use the `git clone` command?
+
+Your answer: 'git clone' is used if you have worked on your repo on a different device but want the changes synced and copied to your current device.
+
+
