@@ -53,7 +53,7 @@ Your answer: git status
 ------------------
 8) What is the difference between `git add` and `git commit`?
 
-Your answer: 'git add' is a way of saving code on individual files as you are working. 'git commit' creates a backup of your file and will create a "version" that can be viewed again.
+Your answer: 'git add' is a way of saving and tracking code on individual files as you are working. 'git commit' creates a backup of your file and will create a "version" that can be viewed again.
 
 
 ------------------

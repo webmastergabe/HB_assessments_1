@@ -3,14 +3,14 @@
 
 const myName = 'Gabriel';
 console.log(myName);
-//CODE HERE 
+
 
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
 const faveNum = 369
 console.log(faveNum);
-//CODE HERE
+
 
 //////////////////PROBLEM 3////////////////////
 
@@ -18,7 +18,7 @@ console.log(faveNum);
 
 let lovesCode = true
 console.log(lovesCode);
-//CODE HERE
+
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -32,7 +32,7 @@ if (faveNum === 13) {
 else {
   console.log('not lucky 13');
 }
-//CODE HERE
+
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -42,4 +42,4 @@ else {
 for (let i = 0; i <= 5; i++) {
   console.log(i);
 }
-//CODE HERE
+

@@ -19,10 +19,6 @@ const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
 const galaAcres = [5, 2, 4, 3, 6, 2, 4]
 const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
 
-
-
-
-
 // PROBLEM 1
 
 /*
@@ -33,7 +29,10 @@ const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
     Log `totalAcres` to the console.
 */
 
-// CODE HERE
+for (let i = 0; i < fujiAcres.length; i++ ) {
+    
+
+}// CODE HERE - write 3 FOR LOOPs
 
 
 
