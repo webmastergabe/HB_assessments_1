@@ -1,6 +1,6 @@
 1) What does the `rm` command in the terminal do?
 
-Your answer: the rm command removes files.
+Your answer: the rm command removes files
 
 
 ------------------
@@ -15,7 +15,7 @@ Your answer: ls
    $ cd Users
    $ cd /Users
 
-Your answer: cd Users changes directory into a folder directory, while cd /Users changes directories into a file.
+Your answer: cd Users changes directory into a folder directory, while cd /Users changes directories into a file
 
 
 ------------------
