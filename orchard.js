@@ -29,13 +29,23 @@ const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
     Log `totalAcres` to the console.
 */
 
-for (let i = 0; i < fujiAcres.length; i++ ) {
+let totalAcres = 0;
+
+for (let i = 0; i < fujiAcres.length; i++ ) { //this line initializes the condition of the for loop & as long as i is less than the length of the number of items in the variable fujiAcres, it will continue to run.
+    totalAcres = totalAcres + fujiAcres[i]; // each time the loop is run, it will take the array number, store it in a new variable called totalAcres, and continue to add to is as it loops through.
+    //console.log(totalAcres);
+}
+ 
+ for (let i = 0; i < galaAcres.length; i++ ) {
+    totalAcres = totalAcres + galaAcres[i]; // the loop will continue adding the values of galaAcres into the same variable totalAcres
+    //console.log(totalAcres);
+}
+ 
+ for (let i = 0; i < pinkAcres.length; i++ ) {
+    totalAcres = totalAcres + pinkAcres[i];
     
-
-}// CODE HERE - write 3 FOR LOOPs
-
-
-
+}
+console.log(totalAcres);
 
 
 // PROBLEM 2
@@ -49,10 +59,8 @@ for (let i = 0; i < fujiAcres.length; i++ ) {
     `averageDailyAcres`, and log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
-
-
-
+let averageDailyAcres = totalAcres / 7; //this simply takes the value from totalAcres, divides it by 7, and stores it into a new variable averageDailyAcres.
+console.log(averageDailyAcres);
 
 
 // PROBLEM 3
@@ -80,8 +88,11 @@ for (let i = 0; i < fujiAcres.length; i++ ) {
 let acresLeft = 174 
 let days = 0
 
-// CODE HERE
-
+while (acresLeft > 0) { //set the loop to run while acresLeft is above 0
+    acresLeft = acresLeft- averageDailyAcres; // each time the loop is ran, it will subtract the averageDailyAcres from the acresLeft and return the new value back to the beginning of the loop
+    //days++;
+    console.log(days++); //each time the loop runs, it will increment the number of days have gone and log it to the console.
+}
 
 
 // PROBLEM 4
@@ -101,13 +112,24 @@ let days = 0
     add that number into the new list)
 */
 
-// CODE HERE
-
 let fujiTons = [];
 let galaTons = [];
 let pinkTons = [];
 
+for (const ton of fujiAcres) { //this will loop through each item in the array at a time and store it in a new variable 'ton'
+    fujiTons.push(ton * 6.6); //this takes each item, multiplies it by 6.6, then stores it in a new variable 'fujiTons'. the same is repeated for each apple type and stored separatly.
+}
+console.log(fujiTons);
 
+for (const ton of galaAcres) {
+    galaTons.push(ton * 6.6);
+}
+console.log(galaTons);
+
+for (const ton of pinkAcres) {
+    pinkTons.push(ton * 6.6);
+}
+console.log(pinkTons);
 
 // PROBLEM 5
 
@@ -122,8 +144,29 @@ let pinkTons = [];
     Hint: there are 2000 pounds in a ton.
 */
 
-// CODE HERE 
+let fujiPounds = 0;
 
+for (let i = 0; i < fujiTons.length; i++ ) { //initializes the loop to iterate through the fujiTons array one by one
+    fujiPounds = fujiPounds + fujiTons[i]; //each time it loops, it will add each item together and store into a new variable fugiPounds
+}
+fujiPounds *= 2000; //lastly, it will take the total value of fujiPounds and convert it into pounds by multiplying it by 2000
+console.log(fujiPounds);
+
+let galaPounds = 0;
+
+for (let i = 0; i < galaTons.length; i++ ) {
+    galaPounds = galaPounds + galaTons[i];
+}
+galaPounds *= 2000;
+console.log(galaPounds);
+
+let pinkPounds = 0;
+
+for (let i = 0; i < pinkTons.length; i++ ) {
+    pinkPounds = pinkPounds + pinkTons[i];
+}
+pinkPounds *= 2000;
+console.log(pinkPounds);
 
 
 // PROBLEM 6
@@ -140,13 +183,13 @@ const fujiPrice = .89
 const galaPrice = .64
 const pinkPrice = .55
 
-// CODE HERE
+let fujiProfit = fujiPounds * .89; //this takes the total of the pounds to get the profit made by multiplying it by its cost
+let galaProfit = galaPounds * .64;
+let pinkProfit = pinkPounds * .55;
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
-
-
+console.log(fujiProfit);
+console.log(galaProfit);
+console.log(pinkProfit);
 
 
 // PROBLEM 7
@@ -158,4 +201,5 @@ const pinkPrice = .55
     Log `totalProfit` to the console.
 */
 
-// CODE HERE
+let totalProfit = fujiProfit + galaProfit + pinkProfit; //Finally, profits from each type are added and stored into a new variable totalProfit
+console.log(totalProfit);
